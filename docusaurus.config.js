@@ -1,45 +1,46 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const { themes } = require('prism-react-renderer');
+const { themes } = require("prism-react-renderer");
 const lightTheme = themes.github;
 const darkTheme = themes.dracula;
-var baseUrlIgDownloader = 'http://afridho-api.vercel.app/api/ig';
+var baseUrlIgDownloader = "http://afridho-api.vercel.app/api/ig";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: 'afridho-api',
-    tagline: 'Dinosaurs are cool',
-    url: 'https://afridho-api.vercel.app',
-    baseUrl: '/',
-    onBrokenLinks: 'ignore',
-    onBrokenMarkdownLinks: 'ignore',
-    favicon: 'img/favicon.ico',
+    title: "afridho-api",
+    tagline: "Dinosaurs are cool",
+    url: "https://afridho-api-docs.vercel.app",
+    baseUrl: "/",
+    onBrokenLinks: "ignore",
+    onBrokenMarkdownLinks: "ignore",
+    favicon: "img/favicon.ico",
 
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
-    organizationName: 'afridho', // Usually your GitHub org/user name.
-    projectName: 'afridho-api', // Usually your repo name.
+    organizationName: "afridho", // Usually your GitHub org/user name.
+    projectName: "afridho-api", // Usually your repo name.
 
     // Even if you don't use internalization, you can use this field to set useful
     // metadata like html lang. For example, if your site is Chinese, you may want
     // to replace "en" with "zh-Hans".
     i18n: {
-        defaultLocale: 'en',
-        locales: ['en'],
+        defaultLocale: "en",
+        locales: ["en"],
     },
 
     presets: [
         [
-            'classic',
+            "classic",
             /** @type {import('@docusaurus/preset-classic').Options} */
             ({
                 docs: {
-                    routeBasePath: '/',
-                    sidebarPath: require.resolve('./sidebars.js'),
+                    routeBasePath: "/",
+                    sidebarPath: require.resolve("./sidebars.js"),
                     // Please change this to your repo.
                     // Remove this to remove the "edit this page" links.
-                    editUrl: 'https://github.com/afridho/afridho-api/blob/master/client/',
+                    editUrl:
+                        "https://github.com/afridho/afridho-api/blob/master/client/",
                 },
                 blog: false,
                 // blog: {
@@ -50,7 +51,7 @@ const config = {
                 //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
                 // },
                 theme: {
-                    customCss: require.resolve('./src/css/custom.css'),
+                    customCss: require.resolve("./src/css/custom.css"),
                 },
             }),
         ],
@@ -70,28 +71,28 @@ const config = {
             },
 
             navbar: {
-                title: 'afridho-api',
+                title: "afridho-api",
                 logo: {
-                    alt: 'afridho-api',
-                    src: 'img/logo.png',
+                    alt: "afridho-api",
+                    src: "img/logo.png",
                 },
                 items: [
                     {
-                        type: 'doc',
-                        docId: 'intro',
-                        position: 'left',
-                        label: 'Tutorial',
+                        type: "doc",
+                        docId: "intro",
+                        position: "left",
+                        label: "Tutorial",
                     },
                     // {to: baseUrlIgDownloader, label: 'Instagram Downloader', position: 'left'},
                     {
-                        href: 'https://github.com/afridho/afridho-api',
-                        label: 'GitHub Repository',
-                        position: 'right',
+                        href: "https://github.com/afridho/afridho-api",
+                        label: "GitHub Repository",
+                        position: "right",
                     },
                 ],
             },
             footer: {
-                style: 'dark',
+                style: "dark",
                 // links: [
                 //   {
                 //     title: 'Docs',
@@ -138,7 +139,7 @@ const config = {
             prism: {
                 theme: lightTheme,
                 darkTheme: darkTheme,
-                additionalLanguages: ['bash', 'diff', 'json'],
+                additionalLanguages: ["bash", "diff", "json"],
             },
         }),
 };
