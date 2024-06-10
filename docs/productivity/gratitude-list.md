@@ -1,24 +1,25 @@
 ---
 sidebar_position: 1
-title: Gratitude List
 ---
+
+# Gratitude List
 
 This api is Bear, Shortcut, and Cron connected. Every week, all the gratitude list i have created will send to my device (pushover)
 
 ## Environment
 
-| ENV      | Description |
-| ----------- | ----------- |
-| **PUSHOVER_KEY**   | user key to access device in pushover        |
-| **PUSHOVER_TOKEN_GRATITUDE_LIST** | pushover app token |
-| **GRATITUDE_LIST_PASSWORD** | password to submit message |
-| **GRATITUDE_LIST_NICKNAME** | nickname to message (optional) |
+| ENV                               | Description                           |
+| --------------------------------- | ------------------------------------- |
+| **PUSHOVER_KEY**                  | user key to access device in pushover |
+| **PUSHOVER_TOKEN_GRATITUDE_LIST** | pushover app token                    |
+| **GRATITUDE_LIST_PASSWORD**       | password to submit message            |
+| **GRATITUDE_LIST_NICKNAME**       | nickname to message (optional)        |
 
 ### MongoDB Database
 
-| ENV      | Description |
-| ----------- | ----------- |
-| **Database**   | productivity |
+| ENV            | Description    |
+| -------------- | -------------- |
+| **Database**   | productivity   |
 | **Collection** | gratitude_list |
 
 ## `GET` Endpoint
