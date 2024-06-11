@@ -75,7 +75,7 @@ const config = {
                 title: "afridho-api",
                 logo: {
                     alt: "afridho-api",
-                    src: "img/logo.svg",
+                    src: "img/logo.png",
                 },
                 items: [
                     // {
